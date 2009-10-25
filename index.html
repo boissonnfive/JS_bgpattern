@@ -5,7 +5,7 @@
 	
 <title>bgpattern - Accueil</title>
 
-<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="description" content="Le site officiel de boissonnfive" />
 <meta name="keywords" content="mac os x, windows, linux, programmation, sed, samba, mySQL, grep, php, c++, c, javascript, xhtml, css" />
 
@@ -18,31 +18,36 @@
 <body>
 
 	<form name="bgpattern">
-		<label for="liste">S&eacute;lectionner un fond de page:</label>
-		<select name="liste" id="liste" onchange="toggleActiveBGPattern()">
-		<optgroup label="trouv&eacute;s sur le net">
-			<option value="" selected>pattern_036.gif	
-			<option value="">pattern_084.gif
-			<option value="">pattern_084.png
-			<option value="">pattern_101.gif
-			<option value="">pattern_105.gif
-			<option value="">pattern_138.gif
-			<option value="">pattern_155.gif	
-			<option value="">pattern_156.gif
+		<label for="list">Sélectionner un fond de page:</label>
+		<select name="list" id="list" onchange="switchBGPattern()">
+		<optgroup label="trouvés sur le net">
+			<option value="images/pattern_036.gif" selected>pattern_036.gif</option>	
+			<option value="images/pattern_084.gif">pattern_084.gif</option>
+			<option value="images/pattern_084.png">pattern_084.png</option>
+			<option value="images/pattern_101.gif">pattern_101.gif</option>
+			<option value="images/pattern_105.gif">pattern_105.gif</option>
+			<option value="images/pattern_138.gif">pattern_138.gif</option>
+			<option value="images/pattern_155.gif">pattern_155.gif</option> 
+			<option value="images/pattern_156.gif">pattern_156.gif</option>
+			<option value="images/tile_disks.jpg">tile_disks.jpg</option>
+			<option value="images/Ginger_5313.jpg">Ginger_5313.jpg</option>
+			<option value="images/fleur-pattern.jpg">fleur-pattern.jpg</option>
+			<option value="images/dog_tracks.jpg">dog_tracks.jpg</option>
+			<option value="images/hearthstonebrick.jpg">hearthstonebrick.jpg</option>
 		</optgroup>
 		<optgroup label="faits par moi">
-			<option value="">pattern_bb02.png
-			<option value="">pattern_bb03.png
-			<option value="">pattern_bb04.png		
-			<option value="">pattern_bb05.png
-			<option value="">pattern_bb06.png
-			<option value="">pattern_bb07.png		
-			<option value="">pattern_bb08.png
-			<option value="">pattern_bb09.png
-			<option value="">pattern_bb10.png
-			<option value="">pattern_bb11.png
-			<option value="">pattern_bb12.png
-			<option value="">pattern_bb13.png
+			<option value="images/pattern_bb02.png">pattern_bb02.png</option>
+			<option value="images/pattern_bb03.png">pattern_bb03.png</option>
+			<option value="images/pattern_bb04.png">pattern_bb04.png</option> 
+			<option value="images/pattern_bb05.png">pattern_bb05.png</option>
+			<option value="images/pattern_bb06.png">pattern_bb06.png</option>
+			<option value="images/pattern_bb07.png">pattern_bb07.png</option> 
+			<option value="images/pattern_bb08.png">pattern_bb08.png</option>
+			<option value="images/pattern_bb09.png">pattern_bb09.png</option>
+			<option value="images/pattern_bb10.png">pattern_bb10.png</option>
+			<option value="images/pattern_bb11.png">pattern_bb11.png</option>
+			<option value="images/pattern_bb12.png">pattern_bb12.png</option>
+			<option value="images/pattern_bb13.png">pattern_bb13.png</option>
 		</optgroup>	
 	</SELECT>
 	<!-- <INPUT type =Button name="Appliquer" value="Appliquer" onClick="toggleActiveBGPattern()"> -->
