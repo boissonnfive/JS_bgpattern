@@ -1,0 +1,66 @@
+*
+{
+   /*border: 2px solid gray;*/	/* debug */
+}
+
+html
+{ 
+}
+
+body
+{
+	background-image: url("images/pattern_036.gif");
+  background-repeat: repeat;
+  background-position: bottom left ;	
+}
+
+
+#en-tete-fond
+{
+	height: 250px;
+  background: url("images/background-top.png") no-repeat center;
+}
+
+#en-tete
+{
+	padding-top: 60px;
+	height: 250px;
+  background: url("images/header.png") no-repeat center;
+}
+
+#contenu-fond
+{
+	background-image: url("images/background-body.png");
+	background-repeat: repeat-y;
+	background-position: top center;
+}
+
+#contenu
+{
+	padding-top: 20px; /*pour éviter que l'image de fond ne commence qu'à partir du texte*/
+	padding-bottom: 20px; /*pour éviter que l'image de fond ne commence qu'à partir du texte*/
+	padding-left: 30px;
+	padding-right: 20px;	
+	width: 690px;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: 45px;
+}
+
+#pied-de-page-fond
+{
+	height: 250px;
+  background: url("images/background-bottom.png") no-repeat center;
+}
+
+#pied-de-page
+{
+	padding-top: 120px; /*pour éviter que l'image de fond ne commence qu'à partir du texte*/
+	width: 740px;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-indent: 45px;
+	font-size:x-small; 
+  text-align: center;	
+}
