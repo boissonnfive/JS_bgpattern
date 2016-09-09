@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
 <head>
 	
-<title>bgpattern</title>
+<title>Javascript bgpattern</title>
 
 <!-- META -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -58,16 +58,44 @@
 	
 	<div id="contenu-fond">
 	<div id="contenu">
-		<p>Cette page permet de sélectionner différents fonds de page. Ces fonds de pages sont des motifs qui se répètent (en anglais: bgpattern)</p>
+		<h1>Javascript bgpattern</h1>
 		
-		<p>Le changement est effectué par un script javascript qui va récupérer l'option sélectionnée et sa valeur associée (qui est le nom du fichier image). Il va ensuite modifier le fond de la page avec cette image.</p>
+		<h2>Description</h2>
+		<p>Script javascript qui permet de changer l'image de fond de la page HTML à l'aide de motifs répétitifs (en anglais: bgpattern).</p>
 		
-		<p>
+		<p>Le script javascript va récupérer l'option sélectionnée et sa valeur associée (qui est le nom du fichier image). Il va ensuite modifier le fond de la page avec cette image.</p>
+		
+		<h2>Code Javascript</h2>
+		<code>
+			<pre>
+function switchBGPattern() {
+	var n=document.bgpattern.list.selectedIndex;
+	var bgPatternFile = document.getElementsByTagName("option")[n].value;
+	document.body.style.backgroundImage="url(" + bgPatternFile + ")";
+}
+			</pre>
+		</code>
+		
+		<h2>Code source de la page</h2>
+		<code>
+			<pre>
+&lt;form name=&quot;bgpattern&quot;&gt;
+	&lt;label for=&quot;list&quot;&gt;S&eacute;lectionner un fond de page:&lt;/label&gt;
+	&lt;select name=&quot;list&quot; id=&quot;list&quot; onchange=&quot;switchBGPattern()&quot;&gt;
+	&lt;optgroup label=&quot;trouv&eacute;s sur le net&quot;&gt;
+		&lt;option value=&quot;images/pattern_036.gif&quot; selected&gt;pattern_036.gif&lt;/option&gt;	
+		&lt;option value=&quot;images/pattern_084.gif&quot;&gt;pattern_084.gif&lt;/option&gt;
+	&lt;/optgroup&gt;	
+	&lt;/select&gt;
+&lt;/form&gt;
+			</pre>
+		</code>
+		<!-- <p>
 			<br />
 			<a href="javascript/bgpattern.js">script javascript</a><br />
 			<a href="index.html">code source de la page</a><br />
 			 (Faire clic droit + enregistrer le fichier lié sous...)
-		</p>
+		</p> -->
 		
 	</div> <!-- id="contenu" -->
 	</div> <!-- id="contenu-fond" -->
